@@ -1,0 +1,71 @@
+.ind-body {
+  font-family: Roboto, sans-serif !important;
+  background-color: rgb(27, 29, 33);
+}
+
+.content {
+  background-image: url('/industries/menuBack.7ac70186bb4b465f.webp');
+  background-size: cover;
+}
+
+.p-5 {
+  padding: 3rem !important;
+}
+
+.content .row {
+  margin-top: 5em !important;
+  margin-bottom: 3em;
+}
+
+.content .card {
+  margin-top: 3em;
+  padding: 2em;
+  border: 0;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
+}
+
+.content .card img {
+  width: 45%;
+  height: auto;
+}
+
+html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
+  opacity: 1;
+  -webkit-transform: translateZ(0) scale(1);
+  transform: translateZ(0) scale(1);
+}
+
+html:not(.no-js) [data-aos^=zoom][data-aos^=zoom] {
+  opacity: 0;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+}
+
+.content h1 {
+  font-size: 72px;
+  background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content p {
+  margin-top: 4em !important;
+  color: #9c9c9c;
+  font-size: 16px;
+}
+
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol, ul {
+  padding-left: 2rem;
+}
+
+.content li {
+  color: #9c9c9c;
+}

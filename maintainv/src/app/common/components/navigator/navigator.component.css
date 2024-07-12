@@ -1,0 +1,28 @@
+.content{
+  font-size: 18px;
+  display: block;
+  margin-top: 7em;
+  margin-bottom: -11em;
+  margin-left: 4.5em;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
+.mt-2 {
+  margin-top: .5rem !important;
+}
+
+.content span {
+  color: #ffffff80;
+}
+
+.content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img, svg {
+  vertical-align: middle;
+}

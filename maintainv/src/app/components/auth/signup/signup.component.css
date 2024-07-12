@@ -1,0 +1,155 @@
+.signup-body {
+  font-family: Roboto, sans-serif !important;
+  background: rgb(27, 29, 33);
+  background: linear-gradient(90deg, rgb(27, 29, 33) 0%, rgb(0, 0, 0) 50%, rgb(27, 29, 33) 100%);
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+}
+
+.back {
+  float: right !important;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+.back svg {
+  fill: #fff;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+
+
+/* ------------------------- */
+
+
+#card {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
+  border-width: 1px, 1px, 0px, 1px;
+  border-style: solid;
+  border-color: #d4e4fe30;
+  margin-left: 25%;
+  margin-top: 4%;
+  position: absolute;
+  border-radius: 20px !important;
+  width: 50%;
+  height: 85vh !important;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  cursor: default;
+}
+
+.logoPhoto {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+hr {
+  margin: 1.75rem 0;
+  color: #fff;
+  border: 0;
+  border-top: 1px solid;
+  opacity: .25;
+  height: .25em;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
+.p-2 {
+  padding: .5rem !important;
+}
+
+input {
+  color: #fff !important;
+  border: 0;
+  background-color: rgba(34, 34, 34, 0.5) !important;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+input::placeholder {
+  color: #8493a4;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+#eyes input {
+  border-right: none !important;
+}
+
+#eyes button {
+  align-items: center;
+  justify-content: center;
+  height: 3.14em;
+  background-color: #22222280;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #dee2e6;
+  border: none !important;
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+  cursor: pointer;
+}
+
+button, select {
+  text-transform: none;
+}
+
+#eyes button svg{
+  fill: #fff;
+}
+
+.login {
+  margin: 2% auto auto;
+  width: 98%;
+  height: 6vh;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #0e0e0e;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+p, label {
+  color: #9c9c9c !important;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.text-muted {
+  color: rgb(156, 156, 156) !important;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}

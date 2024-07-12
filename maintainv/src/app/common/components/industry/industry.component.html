@@ -1,0 +1,30 @@
+<app-navigator titleForIndustry="{{ industryTitle }}"></app-navigator>
+
+<div class="content p-5 ind-body">
+  <div class="row d-flex justify-content-around mt-5">
+    <div class="col-lg-5 col-12 card mt-5 p-5">
+      <img
+        data-aos="zoom-in"
+        width="1024"
+        height="984"
+        src="industries/menuImg.webp"
+        alt="Manufacturing"
+        class="aos-init aos-animate"
+      />
+      <h1 data-aos="zoom-in" class="mt-5 aos-init aos-animate">
+        {{ industryTitle }}
+      </h1>
+    </div>
+    <div data-aos="zoom-in" class="col-lg-5 col-12 mt-5 aos-init aos-animate">
+      <p>
+        {{ industryDescription }}
+      </p>
+      <ul>
+        @for (item of industryItems; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>
+
