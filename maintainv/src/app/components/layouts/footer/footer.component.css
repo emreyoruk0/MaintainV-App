@@ -56,8 +56,10 @@ li {
 #list li a{
   transition: .3s;
 }
-#list li a:hover{
-  color: gray;
+
+#list li a:hover {
+  cursor: pointer;
+  color: #9c9c9c;
 }
 
 a {
@@ -88,6 +90,9 @@ hr {
 #schedule{
   transition: .6s;
 }
+#schedule:hover{
+  text-decoration: underline;
+}
 
 .mb-4 {
   margin-bottom: 1.5rem !important;
@@ -104,3 +109,4 @@ hr {
   float: right;
   padding-right: 1em;
 }
+

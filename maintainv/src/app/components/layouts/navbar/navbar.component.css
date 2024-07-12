@@ -4,6 +4,11 @@
   background: linear-gradient(90deg, rgb(27, 29, 33) 0%, rgb(0, 0, 0) 50%, rgb(27, 29, 33) 100%);
 }
 
+.scrolled-navbar {
+  background: linear-gradient(89.61deg, #1F222A -17.72%, #020303 99.5%) !important;
+  color: white;
+}
+
 img {
   width: 50%;
   height: auto;
@@ -73,9 +78,4 @@ li {
 .mx-3 {
   margin-right: 1rem !important;
   margin-left: 1rem !important;
-}
-
-.scrolled-navbar {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
 }
