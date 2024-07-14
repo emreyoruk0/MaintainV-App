@@ -63,11 +63,6 @@ button{
   color: #fff;
 }
 
-.p-3 {
-  padding: 1rem !important;
-}
-
-
 
 
 
@@ -77,10 +72,6 @@ button{
 
 .home2{
   background-color: #fff;
-}
-
-.p-5 {
-  padding: 3rem !important;
 }
 
 .row {
@@ -117,10 +108,6 @@ body[data-aos-duration="400"] [data-aos] {
 
 .text-center {
   text-align: center !important;
-}
-
-.p-2 {
-  padding: .5rem !important;
 }
 
 .home2 h2 {
@@ -196,23 +183,12 @@ img, svg {
   color: #fff;
 }
 
-.mt-5 {
-  margin-top: 3rem !important;
-}
-
-
-
-.mb-5 {
-  margin-bottom: 3rem !important;
-}
-
 .home4 span {
   background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .home4 .card {
   width: 24%;

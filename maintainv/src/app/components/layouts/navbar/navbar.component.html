@@ -1,17 +1,17 @@
 <div id="body-navbar">
   <nav class="navbar navbar-expand-lg px-4 py-4 fixed-top" [ngClass]="{'scrolled-navbar': isShow}">
     <div class="container-fluid">
-      <a routerLink="/" title="Logo">
+      <header (click)="goHomeAndTop()" title="Logo">
         <img
           height="40"
           width="152"
           src="logo/maintainv-logo2.svg"
           alt="Maintain-V Logo"
           class="m-3 mt-0 d-none d-lg-block"/>
-      </a>
+      </header>
 
       <div class="row" style="margin: auto">
-        <a id="btn" routerLink="/" title="Menu" class="text-start col-6">
+        <a id="btn" (click)="goHomeAndTop()" title="Menu" class="text-start col-6">
           <img
             height="40"
             width="40"

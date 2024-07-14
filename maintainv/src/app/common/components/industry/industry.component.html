@@ -1,8 +1,8 @@
 <app-navigator titleForIndustry="{{ industryTitle }}"></app-navigator>
 
-<div class="content p-5 ind-body">
-  <div class="row d-flex justify-content-around mt-5">
-    <div class="col-lg-5 col-12 card mt-5 p-5">
+<main class="content p-5">
+  <section class="row justify-content-around mt-5">
+    <aside class="col-lg-5 col-12 card mt-5 p-5">
       <img
         data-aos="zoom-in"
         width="1024"
@@ -14,8 +14,8 @@
       <h1 data-aos="zoom-in" class="mt-5 aos-init aos-animate">
         {{ industryTitle }}
       </h1>
-    </div>
-    <div data-aos="zoom-in" class="col-lg-5 col-12 mt-5 aos-init aos-animate">
+    </aside>
+    <article data-aos="zoom-in" class="col-lg-5 col-12 mt-5 aos-init aos-animate">
       <p>
         {{ industryDescription }}
       </p>
@@ -24,7 +24,7 @@
           <li>{{ item }}</li>
         }
       </ul>
-    </div>
-  </div>
-</div>
+    </article>
+  </section>
+</main>
 

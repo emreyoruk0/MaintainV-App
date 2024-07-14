@@ -1,4 +1,4 @@
-.content{
+section {
   font-size: 18px;
   display: block;
   margin-top: 7em;
@@ -6,23 +6,11 @@
   margin-left: 4.5em;
 }
 
-.p-3 {
-  padding: 1rem !important;
-}
-
-.mt-2 {
-  margin-top: .5rem !important;
-}
-
-.content span {
+section span {
   color: #ffffff80;
 }
 
-.content a {
+section a {
   color: #fff;
   text-decoration: none;
-}
-
-img, svg {
-  vertical-align: middle;
 }
