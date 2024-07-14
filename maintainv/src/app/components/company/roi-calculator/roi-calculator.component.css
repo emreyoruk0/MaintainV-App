@@ -1,0 +1,131 @@
+.content {
+  background-image: url('/about/sourceBack.26a58e8e3b58d35e.webp');
+  background-size: cover;
+}
+
+.content .row {
+  margin-top: 5em !important;
+  margin-bottom: 3em;
+}
+
+.content .card {
+  margin-top: 1em !important;
+  padding: 2em;
+  border: 0;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
+}
+
+.content .card img {
+  margin-top: 5em !important;
+  width: 40%;
+  height: auto;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+img {
+  width: 70%;
+  height: 75%;
+}
+
+.content h1 {
+  font-size: 72px;
+  background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+label {
+  color: #9c9c9c;
+  margin-left: .5em;
+  font-size: 12px;
+}
+
+.form-label {
+  margin-bottom: .5rem;
+}
+label {
+  display: inline-block;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#submitButton {
+  height: 3em;
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+
+
+
+
+.content #hidden {
+  color: #9c9c9c;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+.content #hidden thead {
+  color: #fff;
+}
+
+thead, tbody, tfoot, tr, td, th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+.content #hidden .hr-text {
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: #000;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: .25;
+}
+
+.content #hidden .btn-outline-primary {
+  margin-top: 1em;
+  background: rgb(1, 101, 254);
+  color: #fff !important;
+  border-radius: 40px !important;
+  width: 100% !important;
+  height: 42px;
+  padding: 8px, 24px, 8px, 24px;
+}

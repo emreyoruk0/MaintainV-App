@@ -1,1 +1,174 @@
-<p>roi-calculator works!</p>
+<app-navigator titleForIndustry="ROI Calculator"></app-navigator>
+
+<div class="content p-5">
+  <div class="row d-flex justify-content-around mt-5">
+    <div class="col-lg-5 col-12 card mt-5 p-5">
+      <img
+        width="1024"
+        height="984"
+        src="sources/source1.webp"
+        alt="ROI Calculator"
+      />
+      <h1 class="mt-5">ROI CALCULATOR</h1>
+    </div>
+    <div class="col-lg-6 col-12 mt-5 card">
+      <form novalidate="" id="form" class="ng-untouched ng-pristine ng-invalid">
+        <div class="row mb-4">
+          <div class="col-lg-6 col-12">
+            <label for="typeNumber" class="form-label">
+              Number of Machines in the Business (Number)
+            </label>
+            <div class="form-outline">
+              <input
+                placeholder="5"
+                type="number"
+                id="typeNumber"
+                formcontrolname="machineNumber"
+                class="form-control ng-untouched ng-pristine ng-invalid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <label for="typeNumber" class="form-label"
+              >Daily Working Time(Hours)</label
+            ><input
+              placeholder="12"
+              type="number"
+              id="typeNumber"
+              formcontrolname="dailyHour"
+              class="form-control ng-untouched ng-pristine ng-invalid"
+            />
+          </div>
+          <div class="col-lg-6 col-12">
+            <label for="typeNumber" class="form-label">
+              1 Machine Working Days per Week </label
+            ><input
+              placeholder="5"
+              type="number"
+              id="typeNumber"
+              formcontrolname="workingDayNumber"
+              class="form-control ng-untouched ng-pristine ng-invalid"
+            />
+          </div>
+          <div class="col-lg-6 col-12">
+            <label class="form-label">
+              1 Machine 1 Hour Produced Commercial Value ($) </label
+            ><input
+              placeholder="$"
+              type="number"
+              formcontrolname="hourlyCost"
+              class="form-control ng-untouched ng-pristine ng-invalid"
+            />
+          </div>
+          <div class="col-lg-6 col-12">
+            <label class="form-label">
+              Total Turnover of 1 Machine Park ($) </label
+            ><input
+              type="number"
+              placeholder="$"
+              formcontrolname="totalMoney"
+              class="form-control ng-untouched ng-pristine ng-invalid"
+            />
+          </div>
+          <div class="col-lg-6 col-12">
+            <label class="form-label"> Operator Salary Cost ($) </label
+            ><input
+              placeholder="$"
+              type="number"
+              formcontrolname="employeeCost"
+              class="form-control ng-untouched ng-pristine ng-invalid"
+            />
+          </div>
+          <div class="col-lg-6 col-12">
+            <label class="form-label"> Number of Operators per Machine</label
+            ><input
+              placeholder="4"
+              type="number"
+              formcontrolname="employeePiece"
+              class="form-control text-muted ng-untouched ng-pristine ng-invalid"
+            />
+          </div>
+          <div class="col-lg-6 col-12">
+            <label class="form-label"> Break Time in Business (Monthly) </label
+            ><input
+              placeholder="72"
+              type="number"
+              formcontrolname="breakTime"
+              class="form-control ng-untouched ng-pristine ng-invalid"
+            />
+          </div>
+          <div class="col-lg-6 col-12">
+            <label class="form-label"> Downtime in Operation (Hours) </label
+            ><input
+              placeholder="24"
+              type="number"
+              formcontrolname="downTime"
+              class="form-control ng-untouched ng-pristine ng-invalid"
+            />
+          </div>
+          <div class="col-lg-6 col-12">
+            <label class="form-label">
+              1 Machine Monthly Electricity Expense ($) </label
+            ><input
+              placeholder="$"
+              type="number"
+              formcontrolname="electricCost"
+              class="form-control ng-untouched ng-pristine ng-invalid"
+            />
+          </div>
+          <div class="col-lg-6 col-12">
+            <button
+              id="submitButton"
+              type="button"
+              class="btn btn-outline-primary"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+        <div
+          id="hidden"
+          class="row col-12 mb-4 d-none"
+          style="font-size: 1.2em; margin: auto"
+        >
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Explanation</th>
+                <th scope="col">Cost</th>
+              </tr>
+            </thead>
+            <hr class="hr-text" />
+            <tbody>
+              <tr>
+                <td>Monthly Downtime Cost</td>
+                <td>$</td>
+              </tr>
+              <tr>
+                <td>Monthly Downtime Cost from Total Turnover</td>
+                <td>$</td>
+              </tr>
+              <tr>
+                <td>Labor Cost of Monthly Downtime</td>
+                <td>$</td>
+              </tr>
+              <tr>
+                <td>Electricity Cost of Maintenance</td>
+                <td>$</td>
+              </tr>
+              <tr>
+                <td>Total Maintenance Cost</td>
+                <td>$</td>
+              </tr>
+              <div class="col-lg-6 col-12 p-3">
+                <button class="btn btn-outline-primary text-center mt-2">
+                  Back to Calculation
+                </button>
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

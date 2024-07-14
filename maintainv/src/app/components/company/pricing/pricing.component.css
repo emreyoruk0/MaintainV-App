@@ -1,0 +1,146 @@
+.content {
+  margin-top: 6em;
+}
+
+.content h1 {
+  margin-top: 1em;
+  font-size: 60px !important;
+  background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content .card {
+  margin-top: 3em;
+  margin-bottom: 4em;
+  border: none;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 15px #00000080;
+  transition: .5s;
+  border-width: 1px, 1px, 0px, 1px;
+  border-style: solid;
+  border-color: #d4e4fe30;
+}
+.content .card:hover {
+  transform: scale(1.02);
+}
+
+.content .header {
+  padding: 1em;
+}
+
+.content span, .content h2, .content p {
+  color: #fff;
+}
+
+.content .title span {
+  font-weight: 100;
+  color: gray;
+}
+
+.content .title {
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.content .title h2 {
+  display: inline-block;
+}
+
+.content .title span {
+  font-weight: 100;
+}
+
+.content .article {
+  padding: 1em;
+}
+
+.content ul {
+  color: #fff;
+  padding-left: 0 !important;
+}
+
+.content li {
+  list-style: none;
+}
+
+.content svg {
+  fill: #fff;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+.content .free {
+  margin: auto auto 5px;
+  text-align: center;
+  border: 1px solid #0065fc;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 50%;
+  margin-top: 1em !important;
+  transition: .5;
+}
+.content .free:hover {
+  cursor: pointer;
+  background-color: #0065fc33;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.content .free h4 {
+  padding: 5px !important;
+  font-size: 1em;
+  color: #fff;
+  margin-top: 6px;
+}
+
+.content p {
+  text-align: center;
+  font-size: 12px !important;
+  padding: 0 !important;
+}
+
+.content .pay {
+  cursor: pointer;
+  margin-top: 6.6em !important;
+  color: #fff;
+  margin: 1em auto 20px;
+  text-align: center;
+  border: 1px solid #0065fc;
+  border-radius: 20px;
+  width: 50%;
+}
+.content .pay:hover {
+  cursor: pointer;
+  background-color: #0065fc33;
+}
+
+.content .pay h4 {
+  font-size: 1em;
+  padding: 5px !important;
+  color: #fff;
+  margin-top: 6px;
+}
+
+.content .footer {
+  bottom: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 0 10px 10px;
+  background-color: #0065fc33;
+  color: #fff;
+  text-align: center;
+}
+
+.content .footer svg {
+  fill: #90ff21;
+}
+
+
