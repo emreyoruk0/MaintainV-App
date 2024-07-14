@@ -23,19 +23,6 @@
   height: auto;
 }
 
-html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
-  opacity: 1;
-  -webkit-transform: translateZ(0) scale(1);
-  transform: translateZ(0) scale(1);
-}
-
-html:not(.no-js) [data-aos^=zoom][data-aos^=zoom] {
-  opacity: 0;
-  transition-property: opacity, -webkit-transform;
-  transition-property: opacity, transform;
-  transition-property: opacity, transform, -webkit-transform;
-}
-
 .content h1 {
   font-size: 72px;
   background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);

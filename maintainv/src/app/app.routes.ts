@@ -19,6 +19,7 @@ export const routes: Routes = [
                 () => import('./components/home/home.component')
                 .then(c => c.HomeComponent)
           },
+          // ******************** Industries ********************
           {
             path: 'manufacturing',
             loadComponent:
@@ -78,7 +79,57 @@ export const routes: Routes = [
             loadComponent:
                 () => import('./components/industries/aerospace/aerospace.component')
                 .then(c => c.AerospaceComponent)
-          }
+          }, // ******************** end of Industries ********************
+
+          // ******************** Company ********************
+          {
+            path: 'terms-of-use',
+            loadComponent:
+                () => import('./components/company/terms-of-use/terms-of-use.component')
+                .then(c => c.TermsOfUseComponent)
+          },
+          {
+            path: 'privacy-policy',
+            loadComponent:
+                () => import('./components/company/privacy-policy/privacy-policy.component')
+                .then(c => c.PrivacyPolicyComponent)
+          },
+          {
+            path: 'delivery-and-return-notice',
+            loadComponent:
+                () => import('./components/company/delivery-and-return-notice/delivery-and-return-notice.component')
+                .then(c => c.DeliveryAndReturnNoticeComponent)
+          },
+          {
+            path: 'sales-agreement',
+            loadComponent:
+                () => import('./components/company/sales-agreement/sales-agreement.component')
+                .then(c => c.SalesAgreementComponent)
+          },
+          {
+            path: 'roi-calculator',
+            loadComponent:
+                () => import('./components/company/roi-calculator/roi-calculator.component')
+                .then(c => c.RoiCalculatorComponent)
+          },
+          {
+            path: 'blog',
+            loadComponent:
+                () => import('./components/company/blog/blog.component')
+                .then(c => c.BlogComponent)
+          },
+          {
+            path: 'pricing',
+            loadComponent:
+                () => import('./components/company/pricing/pricing.component')
+                .then(c => c.PricingComponent)
+          },
+          {
+            path: 'about',
+            loadComponent:
+                () => import('./components/company/about/about.component')
+                .then(c => c.AboutComponent)
+          } // ******************** end of Company ********************
         ]
   },
   {

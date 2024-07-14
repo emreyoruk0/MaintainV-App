@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
+import { SettingsIconComponent } from "../../../common/components/settings-icon/settings-icon.component";
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, SettingsIconComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

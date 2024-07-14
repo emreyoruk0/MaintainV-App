@@ -13,21 +13,13 @@ img {
   width: 50%;
   height: auto;
   cursor: pointer;
+  vertical-align: middle;
 }
 
-a{
+a {
   color: #fff !important;
   cursor: pointer;
   text-decoration: none;
-}
-
-svg {
-  margin-left: 5px;
-  margin-bottom: 2px;
-}
-
-img, svg {
-  vertical-align: middle;
 }
 
 #list {
@@ -37,31 +29,6 @@ img, svg {
 #list li {
   margin-right: 2em;
 }
-
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-  unicode-bidi: isolate;
-}
-
-
-.nav-link {
-  display: block;
-  color: var(--bs-nav-link-color);
-  text-decoration: none;
-  background: none;
-  border: 0;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-}
-
-
-li {
-  text-align: -webkit-match-parent;
-}
-
-
-
-
 
 .start {
   border: 1px solid #0165fd;
@@ -73,9 +40,4 @@ li {
   color: #fff !important;
   padding: 10px;
   font-size: 15px;
-}
-
-.mx-3 {
-  margin-right: 1rem !important;
-  margin-left: 1rem !important;
 }
