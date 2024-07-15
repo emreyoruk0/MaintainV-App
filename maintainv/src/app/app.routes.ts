@@ -19,6 +19,24 @@ export const routes: Routes = [
                 () => import('./components/home/home.component')
                 .then(c => c.HomeComponent)
           },
+          {
+            path: 'features',
+            loadComponent:
+                () => import('./components/features/features.component')
+                .then(c => c.FeaturesComponent)
+          },
+          {
+            path: 'contact',
+            loadComponent:
+                () => import('./components/contact/contact.component')
+                .then(c => c.ContactComponent)
+          },
+          {
+            path: 'learning-center',
+            loadComponent:
+                () => import('./components/learning-center/learning-center.component')
+                .then(c => c.LearningCenterComponent)
+          },
           // ******************** Industries ********************
           {
             path: 'manufacturing',
@@ -115,8 +133,14 @@ export const routes: Routes = [
           {
             path: 'blog',
             loadComponent:
-                () => import('./components/company/blog/blog.component')
+                () => import('./components/company/blog/components/blog/blog.component')
                 .then(c => c.BlogComponent)
+          },
+          {
+            path: 'blog/:value',
+            loadComponent:
+                () => import('./components/company/blog/components/blog-detail/blog-detail.component')
+                .then(c => c.BlogDetailComponent)
           },
           {
             path: 'pricing',

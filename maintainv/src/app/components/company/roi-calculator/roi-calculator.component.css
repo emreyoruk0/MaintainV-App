@@ -48,9 +48,6 @@ label {
 .form-label {
   margin-bottom: .5rem;
 }
-label {
-  display: inline-block;
-}
 
 .form-control {
   display: block;
@@ -66,6 +63,10 @@ label {
   border: var(--bs-border-width) solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.form-control.is-invalid {
+  padding-right: calc(1.5em + .75rem);
+  background-position: right calc(.375em + .1875rem) center;
 }
 
 #submitButton {
@@ -118,6 +119,16 @@ hr {
   border: 0;
   border-top: var(--bs-border-width) solid;
   opacity: .25;
+}
+
+.content #hidden .hr-text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, white, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
 }
 
 .content #hidden .btn-outline-primary {

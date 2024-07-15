@@ -9,5 +9,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navigator.component.css'
 })
 export class NavigatorComponent {
-  @Input() titleForIndustry: string = '';
+  @Input() firstTitle: string = '';
+  @Input() secondTitle: string = '';
 }

@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { SettingsIconComponent } from "../../../common/components/settings-icon/settings-icon.component";
+import { GoToTopService } from '../../../common/services/go-to-top.service';
 
 @Component({
   selector: 'app-navbar',
@@ -15,15 +16,10 @@ export class NavbarComponent {
   topPosToStartShowing = 100;
 
   constructor(
-    private _router: Router
+    public _goToTop: GoToTopService
   ){}
 
-  goHomeAndTop(){
-    this._router.navigateByUrl('/')
-        .then(() => {
-        window.scrollTo(0, 0);
-        });
-  }
+
 
 
   @HostListener('window:scroll')

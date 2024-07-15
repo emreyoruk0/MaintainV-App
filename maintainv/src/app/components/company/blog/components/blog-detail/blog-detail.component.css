@@ -1,0 +1,52 @@
+.container{
+  margin-top: 15em;
+  color: #9c9c9c;
+}
+
+.container hr {
+  color: #fff;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: .25;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#latest .card {
+  position: sticky !important;
+  top: 17%;
+}
+
+.container .card {
+  width: 100%;
+  background-color: #0e0e0e;
+  color: #fff;
+  transition: .8s;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+.container .card:hover svg {
+  fill: #333;
+  background-color: #fff;
+}
+
+.container svg {
+  fill: #fff;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  width: 17%;
+  background-color: #333;
+  border-radius: 100px;
+  transition: .5s;
+  z-index: 999;
+  cursor: pointer;
+}
+

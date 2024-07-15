@@ -85,3 +85,6 @@ hr {
   padding-right: 1em;
 }
 
+a:hover{
+  cursor: pointer;
+}

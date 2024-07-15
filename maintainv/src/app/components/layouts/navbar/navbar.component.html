@@ -1,12 +1,12 @@
 <div id="body-navbar">
   <nav class="navbar navbar-expand-lg px-4 py-4 fixed-top" [ngClass]="{'scrolled-navbar': isShow}">
     <div class="container-fluid">
-      <header (click)="goHomeAndTop()" title="Logo">
+      <header (click)="_goToTop.goHomeAndTop()" title="Logo">
         <img height="40" width="152" src="logo/maintainv-logo2.svg" alt="Maintain-V Logo" class="m-3 mt-0 d-none d-lg-block"/>
       </header>
 
       <div class="row" style="margin: auto">
-        <a id="btn" (click)="goHomeAndTop()" title="Menu" class="text-start col-6">
+        <a id="btn" (click)="_goToTop.goHomeAndTop()" title="Menu" class="text-start col-6">
           <img height="40" width="40" src="logo/favicon.svg" alt="Maintain-V Logo" class="m-3 d-lg-none"/>
         </a>
         <a id="btn" type="button" title="Menu" class="navbar-toggler text-end col-6"

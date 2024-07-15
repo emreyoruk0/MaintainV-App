@@ -1,0 +1,100 @@
+.container {
+  padding: 2em;
+  margin-top: 7em;
+}
+
+.container h1 {
+  background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .card {
+  height: auto;
+  border: none;
+  margin-bottom: 2em;
+  transition: .5s;
+  background-color: #0e0e0e !important;
+  color: #fff;
+  padding: 2em;
+  border: 1px solid rgba(212, 228, 254, .19);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
+}
+
+.icons svg {
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.container svg {
+  fill: #333;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+.card>hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: .25;
+}
+
+.title {
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 8vh;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.description {
+  height: 25vh;
+  padding: 10px;
+}
+@media (min-width: 980px) {
+  .description {
+      height: 35vh !important;
+  }
+}
+
+.card:hover {
+  background-size: cover;
+  background-position: center;
+  transition: .5s;
+}
+
+.xard1:hover {
+  background-image: url('/features/card1.6dba2172dd264285.webp') !important;
+}
+.xard2:hover {
+  background-image: url('/features/card2.49d3b9af4d77997d.webp') !important;
+}
+.xard3:hover {
+  background-image: url('/features/card3.45fd02f863e63498.webp') !important;
+}
+.xard4:hover {
+  background-image: url('/features/card4.3ea6ceb8218cb138.webp') !important;
+}
+.xard5:hover {
+  background-image: url('/features/card5.cca4f156b095c130.webp') !important;
+}
+.xard6:hover {
+  background-image: url('/features/card6.cd70ef2f3a39d6e8.webp') !important;
+}
+.xard7:hover {
+  background-image: url('/features/card7.0368473c4f39aa60.webp') !important;
+}
+.xard8:hover {
+  background-image: url('/features/card8.c78dda743da7b44f.webp') !important;
+}
