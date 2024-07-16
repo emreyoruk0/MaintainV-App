@@ -4,6 +4,21 @@
   background: linear-gradient(90deg, rgb(27, 29, 33) 0%, rgb(0, 0, 0) 50%, rgb(27, 29, 33) 100%);
 }
 
+nav {
+  width: 100%;
+  position: fixed;
+  display: block;
+  z-index: 9999;
+  top: 0;
+  background: transparent !important;
+  padding: 1em 2em;
+}
+@media (max-width: 980px) {
+  nav {
+      background: linear-gradient(89.61deg, #1F222A -17.72%, #020303 99.5%) !important;
+  }
+}
+
 .scrolled-navbar {
   background: linear-gradient(89.61deg, #1F222A -17.72%, #020303 99.5%) !important;
   color: white;
@@ -15,6 +30,11 @@ img {
   cursor: pointer;
   vertical-align: middle;
 }
+@media (max-width: 980px) {
+  img {
+      width: 25%;
+  }
+}
 
 a {
   color: #fff !important;
@@ -23,7 +43,13 @@ a {
 }
 
 #list {
-  margin: auto 0 auto auto;
+  margin: auto 0 auto auto; /* top right bottom left */
+}
+@media (max-width: 980px) {
+  #list {
+      margin-right: 28%;
+      margin-left: 36%;
+  }
 }
 
 #list li {
@@ -35,9 +61,27 @@ a {
   border-radius: 32px;
   padding: 2px;
 }
+.start:hover {
+  transform: scale(1.01);
+}
 
 .start a {
   color: #fff !important;
   padding: 10px;
   font-size: 15px;
+}
+
+svg {
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+@media (max-width: 980px) {
+  #btn svg {
+      margin-left: 6em;
+      margin-top: .4em;
+  }
+}
+
+.login {
+  margin: auto !important;
 }

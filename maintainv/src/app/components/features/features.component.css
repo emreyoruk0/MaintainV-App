@@ -33,23 +33,6 @@
   fill: #333;
 }
 
-img, svg {
-  vertical-align: middle;
-}
-
-.card>hr {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-hr {
-  margin: 1rem 0;
-  color: inherit;
-  border: 0;
-  border-top: var(--bs-border-width) solid;
-  opacity: .25;
-}
-
 .title {
   margin-top: 15px;
   margin-left: 10px;
@@ -68,33 +51,50 @@ hr {
   }
 }
 
-.card:hover {
+
+
+
+
+.overlay1, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6, .overlay7, .overlay8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
-  transition: .5s;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+.overlay1:hover, .overlay2:hover, .overlay3:hover, .overlay4:hover, .overlay5:hover, .overlay6:hover, .overlay7:hover, .overlay8:hover {
+  opacity: 0.8;
 }
 
-.xard1:hover {
-  background-image: url('/features/card1.6dba2172dd264285.webp') !important;
+.overlay1 {
+  background-image: url('/features/card1.6dba2172dd264285.webp');
 }
-.xard2:hover {
-  background-image: url('/features/card2.49d3b9af4d77997d.webp') !important;
+.overlay2 {
+  background-image: url('/features/card2.49d3b9af4d77997d.webp');
 }
-.xard3:hover {
-  background-image: url('/features/card3.45fd02f863e63498.webp') !important;
+.overlay3 {
+  background-image: url('/features/card3.45fd02f863e63498.webp');
 }
-.xard4:hover {
-  background-image: url('/features/card4.3ea6ceb8218cb138.webp') !important;
+.overlay4 {
+  background-image: url('/features/card4.3ea6ceb8218cb138.webp');
 }
-.xard5:hover {
-  background-image: url('/features/card5.cca4f156b095c130.webp') !important;
+.overlay5 {
+  background-image: url('/features/card5.cca4f156b095c130.webp');
 }
-.xard6:hover {
-  background-image: url('/features/card6.cd70ef2f3a39d6e8.webp') !important;
+.overlay6 {
+  background-image: url('/features/card6.cd70ef2f3a39d6e8.webp');
 }
-.xard7:hover {
-  background-image: url('/features/card7.0368473c4f39aa60.webp') !important;
+.overlay7 {
+  background-image: url('/features/card7.0368473c4f39aa60.webp');
 }
-.xard8:hover {
-  background-image: url('/features/card8.c78dda743da7b44f.webp') !important;
+.overlay8 {
+  background-image: url('/features/card8.c78dda743da7b44f.webp');
 }
+
+
+
+

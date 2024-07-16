@@ -6,14 +6,14 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 })
 export class IsValidDirective {
 
-  @Input() appIsValid: boolean = false;
+  @Input() appIsValid: any;
 
   constructor(
     private _el: ElementRef<any>
   ) { }
 
   @HostListener('keyup') keyup(){
-    if(this.appIsValid){
+    if(this.appIsValid.validity.valid){
       this._el.nativeElement.className = "form-control is-valid";
     } else{
       this._el.nativeElement.className = "form-control is-invalid";

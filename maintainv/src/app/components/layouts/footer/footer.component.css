@@ -8,6 +8,11 @@ footer {
   padding: 1em;
   padding-bottom: 0 !important;
 }
+@media (max-width: 980px) {
+  #list{
+      text-align: center;
+  }
+}
 
 p {
   color: #fff;
@@ -19,6 +24,12 @@ p {
   border-top: 2px solid white;
   margin-bottom: 10px;
   width: 50%;
+}
+@media (max-width: 980px) {
+  .border {
+      margin-bottom: 1em !important;
+      margin: auto;
+  }
 }
 
 #list li {

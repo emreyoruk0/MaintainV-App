@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigatorComponent } from "../../common/components/navigator/navigator.component";
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-features',
@@ -9,5 +10,11 @@ import { NavigatorComponent } from "../../common/components/navigator/navigator.
   styleUrl: './features.component.css'
 })
 export class FeaturesComponent {
+
+  constructor(
+    private _title: Title
+  ){
+    _title.setTitle('Features | Maintain-V');
+  }
 
 }

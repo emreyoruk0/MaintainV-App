@@ -32,6 +32,12 @@ export const routes: Routes = [
                 .then(c => c.ContactComponent)
           },
           {
+            path: 'support',
+            loadComponent:
+                () => import('./components/support/components/support/support.component')
+                .then(c => c.SupportComponent)
+          },
+          {
             path: 'learning-center',
             loadComponent:
                 () => import('./components/learning-center/learning-center.component')
