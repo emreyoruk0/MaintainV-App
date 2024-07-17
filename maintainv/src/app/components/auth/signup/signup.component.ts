@@ -18,17 +18,12 @@ export class SignupComponent {
     _title.setTitle('Signup | Maintain-V');
   }
 
-
-  isPasswordShow(passwordInput: any, closedEye: any, openEye: any) {
+  isPasswordShow(passwordInput: any) {
     if (passwordInput.type === 'password') {
       passwordInput.type = 'text';
-      closedEye.style.display = "none";
-      openEye.style.display = "inline-block";
     }
     else {
       passwordInput.type = 'password';
-      closedEye.style.display = "inline-block";
-      openEye.style.display = "none";
     }
   }
 }
