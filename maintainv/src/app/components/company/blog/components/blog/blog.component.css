@@ -49,6 +49,11 @@ p {
   margin-bottom: 1rem;
 }
 
+input::placeholder{
+  color: #9593A4;
+
+}
+
 .search {
   width: 50%;
   height: 50px;

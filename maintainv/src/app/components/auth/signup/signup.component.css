@@ -1,12 +1,11 @@
-.signup-body {
-  font-family: Roboto, sans-serif !important;
-  background: rgb(27, 29, 33);
-  background: linear-gradient(90deg, rgb(27, 29, 33) 0%, rgb(0, 0, 0) 50%, rgb(27, 29, 33) 100%);
-}
-
 .content {
   width: 100%;
   height: 100vh;
+}
+@media (max-width: 980px) {
+  .content {
+      padding: 4em;
+  }
 }
 
 .back {
@@ -19,14 +18,9 @@
   fill: #fff;
 }
 
-img, svg {
-  vertical-align: middle;
-}
 
 
-
-/* ------------------------- */
-
+/* -------------------------------------------------------------- */
 
 #card {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
@@ -40,11 +34,19 @@ img, svg {
   width: 50%;
   height: 85vh !important;
 }
+@media (max-width: 980px) {
+  #card {
+      padding: 5px;
+      position: relative;
+      margin: 18% auto 1em !important;
+      width: 100%;
+      height: auto !important;
+  }
+}
 
-a{
+a {
   text-decoration: none;
   color: #000;
-  cursor: default;
 }
 
 .logoPhoto {
@@ -54,46 +56,38 @@ a{
 }
 
 hr {
-  margin: 1.75rem 0;
-  color: #fff;
+  position: relative;
   border: 0;
-  border-top: 1px solid;
-  opacity: .25;
-  height: .25em;
+  color: #000;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  margin: 1rem 0;
+  color: inherit;
 }
-
-.p-3 {
-  padding: 1rem !important;
-}
-
-.p-2 {
-  padding: .5rem !important;
+hr:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
 }
 
 input {
   color: #fff !important;
   border: 0;
-  background-color: rgba(34, 34, 34, 0.5) !important;
-  padding: 1em;
+  background-color: #22222280;
+  padding: .8em;
   margin-bottom: 1em;
 }
-
+input:focus { /* input'a tıklandığında */
+  background-color: #22222280;
+  outline: none;
+}
 input::placeholder {
   color: #9593A4;
-}
-
-.col-6 {
-  flex: 0 0 auto;
-  width: 50%;
-}
-
-
-.input-group {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  width: 100%;
 }
 
 #eyes input {
@@ -101,21 +95,13 @@ input::placeholder {
 }
 
 #eyes button {
-  align-items: center;
-  justify-content: center;
+  align-items: center; /*dikey*/
+  justify-content: center; /*yatay*/
   height: 3.14em;
   background-color: #22222280;
   border-radius: 0 5px 5px 0;
   border: 1px solid #dee2e6;
   border: none !important;
-}
-
-button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
-  cursor: pointer;
-}
-
-button, select {
-  text-transform: none;
 }
 
 #eyes button svg{
@@ -132,24 +118,21 @@ button, select {
   background-color: #0e0e0e;
 }
 
-.text-center {
-  text-align: center !important;
+.login svg {
+  margin-top: 2px !important;
+  float: right;
 }
 
 p, label {
   color: #9c9c9c !important;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.text-muted {
-  color: rgb(156, 156, 156) !important;
-}
-
 a {
   text-decoration: none;
-  color: #000;
+  color: #006ff0;
+}
+
+.invalid-feedback {
+  font-size: 13px;
+  text-align: right;
 }

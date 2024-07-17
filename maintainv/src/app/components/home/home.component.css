@@ -180,21 +180,30 @@ img, svg {
   height: auto !important;
 }
 
-.card:hover {
+.overlay1, .overlay2, .overlay3, .overlay4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
-  transition: .9s;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
 }
-.card1:hover {
+.overlay1:hover, .overlay2:hover, .overlay3:hover, .overlay4:hover {
+  opacity: 0.8;
+}
+.overlay1 {
   background-image: url('/home/card1.6dba2172dd264285.webp');
 }
-.card2:hover {
+.overlay2 {
   background-image: url('/home/card2.49d3b9af4d77997d.webp');
 }
-.card3:hover {
+.overlay3 {
   background-image: url('/home/card3.45fd02f863e63498.webp');
 }
-.card4:hover {
+.overlay4 {
   background-image: url('/home/card4.3ea6ceb8218cb138.webp');
 }
 

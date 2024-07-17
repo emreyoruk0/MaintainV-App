@@ -40,8 +40,10 @@
                 name="name"
                 #name
                 id="name"
+                pattern="[a-zA-Z,çÇğĞıİöÖşŞüÜ]*"
                 [appIsValid]="name"
               />
+              <span class="invalid-feedback" style="font-size: 13px; text-align:right">Please use a valid name.</span>
             </div>
             <div class="col-12 p-1">
               <input
@@ -58,21 +60,19 @@
                 id="email"
                 [appIsValid]="email"
               />
-              <span class="invalid-feedback" style="font-size: 13px;">Please use a valid email.</span>
+              <span class="invalid-feedback" style="font-size: 13px; text-align:right">Please use a valid email.</span>
             </div>
             <div class="col-12 p-1">
               <textarea
-                required
                 formcontrolname="messages"
                 placeholder="Your Messages..."
                 rows="3"
                 class="form-control"
                 style="max-height: 7em; height: 7em"
                 ngModel
+                required
                 name="messages"
-                #messages
                 id="messages"
-                [appIsValid]="messages"
               ></textarea>
             </div>
           </div>
