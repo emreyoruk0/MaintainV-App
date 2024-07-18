@@ -67,6 +67,11 @@ img, svg {
 #image {
   margin-top: 6em;
 }
+@media (max-width: 980px) {
+  #image img {
+      margin-left: 25%;
+  }
+}
 
 hr {
   margin: 1rem 0;
@@ -98,4 +103,10 @@ hr {
 
 a:hover{
   cursor: pointer;
+}
+
+@media (max-width: 980px) {
+  #apps img{
+      float: none;
+  }
 }

@@ -1,60 +1,154 @@
-<div id="body-navbar">
-  <nav class="navbar navbar-expand-lg" [ngClass]="{'scrolled-navbar': isShow}">
-    <div class="container-fluid">
-      <header (click)="_goToTop.goHomeAndTop()" title="Logo">
-        <img height="40" width="152" src="logo/maintainv-logo2.svg" alt="Maintain-V Logo" class="m-3 d-none d-lg-block"/>
-      </header>
+<nav class="navbar navbar-expand-lg" [ngClass]="{isScrolled: isScrolled || isIndustriesBtnClicked || isSourcesBtnClicked}">
+  <section class="container-fluid">
+    <header (click)="goHomeAndCloseDropdowns()" title="Logo">
+      <img height="40" width="152" src="logo/maintainv-logo2.svg" alt="Maintain-V Logo" class="m-3 d-none d-lg-block"/>
+    </header>
 
-      <div class="row" style="margin: auto">
-        <a id="btn" (click)="_goToTop.goHomeAndTop()" title="Menu" class="text-start col-6">
-          <img height="40" width="40" src="logo/favicon.svg" alt="Maintain-V Logo" class="m-3 d-lg-none"/>
-        </a>
-        <a id="btn" type="button" title="Menu" class="navbar-toggler text-end col-6"
-          data-bs-toggle="collapse"
-          data-bs-target="#mobileView"
-          aria-controls="navbarSupportedConten2"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <svg xmlns="http://www.w3.org/2000/svg" height="2em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" style="fill: #fff"></path></svg>
-        </a>
-      </div>
+    <div class="row mx-auto">
+      <a id="btn" (click)="goHomeAndCloseDropdowns()" title="Menu" class="text-start col-6">
+        <img height="40" width="40" src="logo/favicon.svg" alt="Maintain-V Logo" class="m-3 d-lg-none"/>
+      </a>
+      <a type="button" title="Menu" class="navbar-toggler text-end col-6"
+        data-bs-toggle="collapse"
+        data-bs-target="#mobileView"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" height="2em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path></svg>
+      </a>
+    </div>
 
-      <div id="mobileView" class="collapse navbar-collapse text-center">
-        <ul id="list" class="navbar-nav">
-          <li class="nav-item">
-            <a title="Solutions" id="solution" class="nav-link cursor-pointer">
-              Industries
-              <app-settings-icon></app-settings-icon>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/features" routerlinkactive="active" title="Features" class="nav-link">Features</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/pricing" routerlinkactive="active" title="Pricing" class="nav-link">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/contact" routerlinkactive="active" title="Contact" class="nav-link">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a title="Solutions" id="solution" class="nav-link cursor-pointer">
-              Sources
-              <app-settings-icon></app-settings-icon>
-            </a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item login">
-            <a href="https://app.maintainv.com/#/auth/login" target="_blank" title="Login" class="nav-link cursor-pointer">Login</a>
-          </li>
-          <li class="nav-item start mx-3">
-            <a routerLink="/signup" title="Start Free Trial" class="nav-link cursor-pointer">REQUEST DEMO</a>
-          </li>
-        </ul>
+    <div id="mobileView" class="collapse navbar-collapse text-center">
+      <ul id="list" class="navbar-nav">
+        <li class="nav-item">
+          <a (click)="clickIndustriesBtn()" title="Solutions" id="solution" class="nav-link cursor-pointer">
+            Industries
+            <app-settings-icon [isRotate]="isIndustriesBtnClicked"></app-settings-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/features" title="Features" class="nav-link">
+            Features
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/pricing" title="Pricing" class="nav-link">
+            Pricing
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contact" title="Contact" class="nav-link">
+            Contact
+          </a>
+        </li>
+        <li class="nav-item">
+          <a (click)="clickSourcesBtn()" title="Solutions" id="solution" class="nav-link cursor-pointer">
+            Sources
+            <app-settings-icon [isRotate]="isSourcesBtnClicked"></app-settings-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item login">
+          <a href="https://app.maintainv.com/#/auth/login" target="_blank" title="Login" class="nav-link cursor-pointer">
+            Login
+          </a>
+        </li>
+        <li class="nav-item start mx-3">
+          <a routerLink="/signup" title="Start Free Trial" class="nav-link cursor-pointer">
+            REQUEST DEMO
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  @if (isIndustriesBtnClicked) {
+  <section class="dropdown-clicked">
+    <div class="container p-1">
+      <div class="row">
+        <div id="box" class="col-lg-6 col-12 pt-3">
+          <div class="row">
+            @for (industry of industryLinks; track industry) {
+              <article class="col-6">
+                <a routerLink="/{{ industry.linkUrl }}" title="{{ industry.linkText }}" (click)="clickIndustriesBtn()">
+                  <h5 class="mt-4">
+                    {{ industry.linkText }}
+                    <svg xmlns="http://www.w3.org/2000/svg" height="0.8em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"></path></svg>
+                  </h5>
+                </a>
+              </article>
+            }
+          </div>
+        </div>
+        <aside id="blog" class="col-6">
+          <div class="row">
+            <div class="col-6">
+              <img src="sources/source5.webp" width="3132" height="1762" alt="Blog"/>
+            </div>
+            <div class="col-6 mt-5">
+              <h3>Work Order Management</h3>
+              <p>
+                Work orders help a company monitor and manage its maintenance
+                work.
+              </p>
+              <a routerLink="/blog/work-order-management" title="Blog" (click)="clickIndustriesBtn()">
+                Read Post
+                <svg xmlns="http://www.w3.org/2000/svg" height="0.8em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right">
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
-  </nav>
-</div>
+  </section>
+  }
 
 
+  @if (isSourcesBtnClicked) {
+  <section class="dropdown-clicked">
+    <div class="container p-1">
+      <div class="row">
+        <div id="box" class="col-lg-6 col-12 pt-3">
+          <div class="row">
+            @for (s of sourceLinks; track s) {
+              <article class="col-6">
+                <a routerLink="/{{ s.linkUrl }}" title="{{ s.linkText }}" (click)="clickSourcesBtn()">
+                  <h5 class="mt-4">
+                    {{ s.linkText}}
+                    <svg xmlns="http://www.w3.org/2000/svg" height="0.8em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"></path></svg>
+                  </h5>
+                </a>
+              </article>
+            }
+          </div>
+        </div>
+        <aside id="blog" class="col-6">
+          <div class="row">
+            <div class="col-6">
+              <img src="sources/source5.webp" width="3132" height="1762" alt="Blog"/>
+            </div>
+            <div class="col-6 mt-5">
+              <h3>Work Order Management</h3>
+              <p>
+                Work orders help a company monitor and manage its maintenance
+                work.
+              </p>
+              <a routerLink="/blog/work-order-management" title="Blog" (click)="clickSourcesBtn()">
+                Read Post
+                <svg xmlns="http://www.w3.org/2000/svg" height="0.8em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right">
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  }
+
+</nav>

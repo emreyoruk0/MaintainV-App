@@ -18,6 +18,15 @@ video {
   height: auto;
 }
 
+.home-content #text {
+  margin-top: 10%;
+}
+@media (max-width: 980px) {
+  .home-content #text {
+      text-align: center;
+  }
+}
+
 .home-content h1 {
   margin-top: 2em;
   font-size: 7em !important;
@@ -26,9 +35,20 @@ video {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 980px) {
+  .home-content h1 {
+      font-size: 4em !important;
+  }
+}
 
 .home-content #tour{
   margin-left: 2em;
+}
+@media (max-width: 980px) {
+  .home-content #tour {
+      margin-left: 0 !important;
+      margin-top: 1em;
+  }
 }
 
 p {
@@ -62,24 +82,19 @@ button{
 /* ---------------------------------------------------------------------- */
                                 /* home2 */
 
+
 .home2 {
   background-color: #fff;
 }
 
+@media (max-width: 980px) {
+  .home2 {
+      padding: 1em !important;
+  }
+}
+
 .home2 h2 {
   color: #0e0e0e;
-}
-
-h2, .h2 {
-  font-size: calc(1rem + .8vw);
-}
-
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-  margin-top: 0;
-  margin-bottom: .5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  color: var(--bs-heading-color);
 }
 
 .home2 span {
@@ -92,6 +107,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .home2 img {
   width: 40%;
   height: auto;
+}
+@media (max-width: 980px) {
+  .home2 img {
+      width: 80%;
+  }
 }
 
 img, svg {
@@ -108,9 +128,21 @@ img, svg {
     background-color: #fff;
 }
 
+@media (max-width: 980px) {
+  .home3 {
+      padding: 1em !important;
+  }
+}
+
 .home3 img {
   width: 40%;
   height: auto;
+}
+@media (max-width: 980px) {
+  .home3 img{
+      margin-bottom: 1em;
+      width: 80%;
+  }
 }
 
 .home3 h2 {
@@ -137,6 +169,12 @@ img, svg {
   background: linear-gradient(90deg, rgb(27, 29, 33) 0%, rgb(0, 0, 0) 50%, rgb(27, 29, 33) 100%);
 }
 
+@media (max-width: 980px) {
+  .home4 {
+      padding: 2em !important;
+  }
+}
+
 .home4 h2, .home4 h4{
   color: #fff;
 }
@@ -157,6 +195,12 @@ img, svg {
   border-color: #d4e4fe30;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 980px) {
+  .home4 .card{
+      width: 100% !important;
+      margin-bottom: 15px;
+  }
 }
 
 .home4 .card-content {
@@ -222,10 +266,21 @@ img, svg {
     color: #9c9c9c;
 }
 
+@media (max-width: 980px) {
+  .home5 {
+      padding: 2em !important;
+  }
+}
+
 .home5 img {
   padding-bottom: 2em;
   width: 100%;
   height: auto;
+}
+@media (max-width: 980px) {
+  .home5 img {
+      width: 80%;
+  }
 }
 
 .home5 h2 {

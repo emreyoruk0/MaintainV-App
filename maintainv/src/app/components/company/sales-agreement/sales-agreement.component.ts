@@ -16,7 +16,7 @@ export class SalesAgreementComponent {
     private _title: Title,
     private _goToTop: GoToTopService
   ) {
-    _title.setTitle('Distance Sales Agreement | Maintain-V');
+    _title.setTitle('Sales Agreement | Maintain-V');
     _goToTop.goToTop();
   }
 }

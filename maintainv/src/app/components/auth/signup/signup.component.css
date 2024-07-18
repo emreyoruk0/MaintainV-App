@@ -4,7 +4,7 @@
 }
 @media (max-width: 980px) {
   .content {
-      padding: 4em;
+      padding: 1em;
   }
 }
 
@@ -73,6 +73,11 @@ hr:before {
   top: 50%;
   width: 100%;
   height: 1px;
+}
+@media (max-width: 980px) {
+  hr {
+      display: none;
+  }
 }
 
 input {

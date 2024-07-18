@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigatorComponent } from "../../common/components/navigator/navigator.component";
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-learning-center',
@@ -10,4 +11,9 @@ import { NavigatorComponent } from "../../common/components/navigator/navigator.
 })
 export class LearningCenterComponent {
 
+  constructor(
+    private _title: Title
+  ) {
+    _title.setTitle('Learning Center | Maintain-V');
+   }
 }
