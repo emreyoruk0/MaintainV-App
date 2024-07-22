@@ -6,7 +6,6 @@ import { TopicModel } from '../models/topic.model';
   providedIn: 'root'
 })
 export class FaqsService {
-
   topics: TopicModel[] = [
     { topic: 'All' },
     { topic: 'Dashboard' },
@@ -20,7 +19,7 @@ export class FaqsService {
     { topic: 'Profile' },
     { topic: 'Notification' },
     { topic: 'Scan' }
-  ]
+  ];
 
   questions: FAQModel[] = [
     {
@@ -278,7 +277,5 @@ export class FaqsService {
       question: 'How can I create a work order through the mobile application?',
       answer: "You can create a new work order record by clicking the + button on the main page or in the work order list and selecting the 'Add Work Order' option."
     }
-  ]
-
-  constructor() { }
+  ];
 }

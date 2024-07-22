@@ -5,6 +5,7 @@ import { NavigatorComponent } from '../../../../common/components/navigator/navi
 import { FAQModel } from '../../models/faq.model';
 import { TopicModel } from '../../models/topic.model';
 import { FaqsService } from '../../services/faqs.service';
+import { GoToTopService } from '../../../../common/services/go-to-top.service';
 
 @Component({
   selector: 'app-support',
@@ -21,9 +22,11 @@ export class SupportComponent {
 
   constructor(
     private _title: Title,
+    private _goToTop: GoToTopService,
     private _faqsService: FaqsService
   ) {
-    this._title.setTitle('Support | Maintain-V');
+    _title.setTitle('Support | Maintain-V');
+    _goToTop.goToTop();
     this.topics = this._faqsService.topics;
     this.questions = this._faqsService.questions;
    }

@@ -16,6 +16,11 @@
   -webkit-text-fill-color: transparent;
 }
 
+.container a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
 #svg a:hover {
   color: #656565;
 }
@@ -44,6 +49,11 @@
   color: #9593A4;
 }
 
+.invalid-feedback {
+  font-size: 13px;
+  text-align: end;
+}
+
 .card textarea {
   color: #fff;
   border: 0;
@@ -58,6 +68,8 @@
   width: 100%;
   height: 42px;
 }
+
+
 
 #follow {
   margin-left: 3.5em;
@@ -75,11 +87,6 @@
   display: inline-block;
   margin-top: 1em;
   padding-right: 2em;
-}
-
-.container a {
-  text-decoration: none;
-  color: #9c9c9c;
 }
 
 .media li svg {

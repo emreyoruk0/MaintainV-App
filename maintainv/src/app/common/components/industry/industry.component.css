@@ -1,7 +1,6 @@
 .content {
-  font-family: Roboto, sans-serif !important;
   background-image: url('/industries/menuBack.7ac70186bb4b465f.webp');
-  background-size: cover;
+  background-size: cover; /*resim, div elemanının tamamını kaplayacak şekilde ölçeklendirilir.*/
 }
 
 .content .row {
@@ -10,8 +9,6 @@
 }
 
 .content .card {
-  margin-top: 3em;
-  padding: 2em;
   border: 0;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
@@ -33,7 +30,6 @@
 .content p {
   margin-top: 4em !important;
   color: #9c9c9c;
-  font-size: 16px;
 }
 
 .content li {

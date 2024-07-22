@@ -22,15 +22,6 @@
   height: auto;
 }
 
-img, svg {
-  vertical-align: middle;
-}
-
-img {
-  width: 70%;
-  height: 75%;
-}
-
 .content h1 {
   font-size: 72px;
   background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
@@ -49,25 +40,6 @@ label {
   margin-bottom: .5rem;
 }
 
-.form-control {
-  display: block;
-  width: 100%;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--bs-body-color);
-  appearance: none;
-  background-color: var(--bs-body-bg);
-  background-clip: padding-box;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-.form-control.is-invalid {
-  padding-right: calc(1.5em + .75rem);
-  background-position: right calc(.375em + .1875rem) center;
-}
 
 #submitButton {
   height: 3em;
@@ -75,33 +47,14 @@ label {
   width: 100%;
 }
 
-
-
-
-
 .content #hidden {
   color: #9c9c9c;
-}
-
-table {
-  caption-side: bottom;
-  border-collapse: collapse;
 }
 
 .content #hidden thead {
   color: #fff;
 }
 
-thead, tbody, tfoot, tr, td, th {
-  border-color: inherit;
-  border-style: solid;
-  border-width: 0;
-}
-
-th {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
-}
 
 .content #hidden .hr-text {
   position: relative;

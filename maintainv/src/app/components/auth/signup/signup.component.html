@@ -1,5 +1,4 @@
 <main class="content">
-
   <span class="back">
     <a routerLink="/" title="Go Back" style="cursor: default;">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
@@ -10,14 +9,14 @@
 
   <section id="card">
     <div class="row">
-      <div class="col-lg-12 col-12">
+      <div class="col-12">
         <a routerLink="/" title="Logo">
-          <img src="logo/maintainv-logo.svg" alt="Maintain Logo" class="logoPhoto"/>
+          <img src="logo/maintainv-logo.svg" alt="Maintain Logo" class="logoP"/>
         </a>
         <hr/>
 
-        <form novalidate="" class="p-3 row">
-          <div class="form-group p-2 col-lg-6 col-6">
+        <form class="p-3 row">
+          <div class="form-group p-2 col-6">
             <input
               type="name"
               placeholder="First Name"
@@ -25,11 +24,10 @@
               class="form-control"
               #firstName
               pattern="[A-Za-z]+"
-              [appIsValid]="firstName"
-            />
+              [appIsValid]="firstName"/>
             <span class="invalid-feedback">Please use only uppercase or lowercase.</span>
           </div>
-          <div class="form-group p-2 col-lg-6 col-6">
+          <div class="form-group p-2 col-6">
             <input
               type="name"
               placeholder="Last Name"
@@ -37,8 +35,7 @@
               class="form-control"
               #lastName
               pattern="[A-Za-z]+"
-              [appIsValid]="lastName"
-            />
+              [appIsValid]="lastName"/>
             <span class="invalid-feedback">Please use only uppercase or lowercase.</span>
           </div>
           <div class="form-group p-2 col-lg-6 col-12">
@@ -49,8 +46,7 @@
               class="form-control"
               #title
               pattern="[A-Za-z]+"
-              [appIsValid]="title"
-            />
+              [appIsValid]="title"/>
             <span class="invalid-feedback">Please use only uppercase or lowercase.</span>
           </div>
           <div class="form-group p-2 col-lg-6 col-12">
@@ -61,8 +57,7 @@
               class="form-control"
               #company
               pattern="[A-Za-z]+"
-              [appIsValid]="company"
-            />
+              [appIsValid]="company"/>
             <span class="invalid-feedback">Please use only uppercase or lowercase.</span>
           </div>
           <div class="form-group p-2 col-lg-6 col-12">
@@ -78,8 +73,7 @@
               class="form-control p-3"
               #emailAddress
               email
-              [appIsValid]="emailAddress"
-            />
+              [appIsValid]="emailAddress"/>
             <span class="invalid-feedback">Please use a valid email.</span>
           </div>
           <div class="form-group p-2 col-6">
@@ -87,11 +81,9 @@
               <input
                 placeholder="Password"
                 formcontrolname="password"
-                aria-describedby="basic-addon2"
                 class="form-control"
                 type="password"
-                #password
-              />
+                #password/>
               <div class="input-group-append">
                 <button type="button" (click)="isPasswordShow(password)">
                   @if (password.type === 'password') {
@@ -110,11 +102,9 @@
               <input
                 placeholder="Password Confirm"
                 formcontrolname="passwordConfirm"
-                aria-describedby="basic-addon2"
                 class="form-control"
                 type="password"
-                #passwordConfirm
-              />
+                #passwordConfirm/>
               <div class="input-group-append">
                 <button type="button" (click)="isPasswordShow(passwordConfirm)">
                   @if (passwordConfirm.type === 'password') {
@@ -136,7 +126,7 @@
         </form>
 
         <div class="text-center">
-          <p class="text-muted">
+          <p>
             Already have an account?
             <span>
               <a href="https://app.maintainv.com/#/auth/login" target="_blank" title="Sign In">
@@ -146,7 +136,7 @@
           </p>
         </div>
         <div class="text-center">
-          <p class="text-muted" style="font-size: 14px">
+          <p style="font-size: 14px">
             By clicking above, you agree to the
             <span>
               <a routerLink="/terms-of-use" title="Sign In">Maintain-V Terms of Use.</a>

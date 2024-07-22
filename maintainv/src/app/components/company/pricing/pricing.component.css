@@ -49,10 +49,6 @@
   display: inline-block;
 }
 
-.content .title span {
-  font-weight: 100;
-}
-
 .content .article {
   padding: 1em;
 }
@@ -68,10 +64,6 @@
 
 .content svg {
   fill: #fff;
-}
-
-img, svg {
-  vertical-align: middle;
 }
 
 .content .free {

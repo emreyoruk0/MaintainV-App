@@ -3,14 +3,13 @@
   color: #9c9c9c;
 }
 
-.container h3{
+.container h3 {
   background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.container p{
+.container p {
   font-size: 18px;
-  color: #9c9c9c;
 }

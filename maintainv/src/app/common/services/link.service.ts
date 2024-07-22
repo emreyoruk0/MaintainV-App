@@ -5,7 +5,6 @@ import { LinkModel } from '../models/link.model';
   providedIn: 'root'
 })
 export class LinkService {
-
   industryLinks: LinkModel[] = [
     {linkUrl: 'manufacturing', linkText: 'Manufacturing'},
     {linkUrl: 'energy', linkText: 'Energy'},
@@ -24,7 +23,5 @@ export class LinkService {
     {linkUrl: 'roi-calculator', linkText: 'ROI Calculator'},
     {linkUrl: 'learning-center', linkText: 'Learning Center'},
     {linkUrl: 'support', linkText: 'Support'},
-  ]
-
-  constructor() { }
+  ];
 }

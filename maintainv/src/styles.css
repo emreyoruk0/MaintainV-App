@@ -4,6 +4,5 @@
 
 body {
   font-family: Roboto, sans-serif !important;
-  background: rgb(27, 29, 33);
   background: linear-gradient(90deg, rgb(27, 29, 33) 0%, rgb(0, 0, 0) 50%, rgb(27, 29, 33) 100%);
 }

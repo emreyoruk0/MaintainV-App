@@ -1,7 +1,3 @@
-.content {
-  width: 100%;
-  height: 100vh;
-}
 @media (max-width: 980px) {
   .content {
       padding: 1em;
@@ -17,6 +13,7 @@
 .back svg {
   fill: #fff;
 }
+
 
 
 
@@ -44,12 +41,7 @@
   }
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-.logoPhoto {
+.logoP {
   width: 30%;
   margin-left: 35%;
   margin-top: 5%;
@@ -89,14 +81,9 @@ input {
 }
 input:focus { /* input'a tıklandığında */
   background-color: #22222280;
-  outline: none;
 }
 input::placeholder {
   color: #9593A4;
-}
-
-#eyes input {
-  border-right: none !important;
 }
 
 #eyes button {
@@ -105,13 +92,13 @@ input::placeholder {
   height: 3.14em;
   background-color: #22222280;
   border-radius: 0 5px 5px 0;
-  border: 1px solid #dee2e6;
   border: none !important;
 }
 
-#eyes button svg{
+#eyes button svg {
   fill: #fff;
 }
+
 
 .login {
   margin: 2% auto auto;

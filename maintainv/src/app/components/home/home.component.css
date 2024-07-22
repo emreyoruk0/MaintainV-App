@@ -1,21 +1,18 @@
+.home1 {
+  height: 100vh;
+  position: relative;
+}
+
 video {
   position: absolute;
-  margin: auto;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.home {
-  height: 100vh;
-  position: relative;
-}
-
 .home-content {
-  position: relative;
   padding-top: 150px;
   color: #fff;
-  height: auto;
 }
 
 .home-content #text {
@@ -53,13 +50,6 @@ video {
 
 p {
   font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .btn-dark {
@@ -69,9 +59,6 @@ a {
 
 .btn-outline-dark {
   border-radius: 40px;
-}
-
-button{
   color: #fff;
 }
 
@@ -80,31 +67,25 @@ button{
 
 
 /* ---------------------------------------------------------------------- */
-                                /* home2 */
+                                /* home2, home3 */
 
-
-.home2 {
+.home2, .home3 {
   background-color: #fff;
 }
-
 @media (max-width: 980px) {
-  .home2 {
+  .home2, .home3 {
       padding: 1em !important;
   }
 }
 
-.home2 h2 {
-  color: #0e0e0e;
-}
-
-.home2 span {
+.home2 span, .home3 span, .home4 span, .home5 span {
   background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.home2 img {
+.home2 img, .home3 img {
   width: 40%;
   height: auto;
 }
@@ -112,48 +93,10 @@ button{
   .home2 img {
       width: 80%;
   }
-}
-
-img, svg {
-  vertical-align: middle;
-}
-
-
-
-
-/* ---------------------------------------------------------------------- */
-                                /* home3 */
-
-.home3 {
-    background-color: #fff;
-}
-
-@media (max-width: 980px) {
-  .home3 {
-      padding: 1em !important;
-  }
-}
-
-.home3 img {
-  width: 40%;
-  height: auto;
-}
-@media (max-width: 980px) {
-  .home3 img{
+  .home3 img {
       margin-bottom: 1em;
       width: 80%;
   }
-}
-
-.home3 h2 {
-  color: #0e0e0e;
-}
-
-.home3 span {
-  background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 
@@ -163,27 +106,13 @@ img, svg {
 /* ---------------------------------------------------------------------- */
                                 /* home4 */
 
-.home4{
+.home4 {
   padding: 5em !important;
-  background: rgb(27, 29, 33);
-  background: linear-gradient(90deg, rgb(27, 29, 33) 0%, rgb(0, 0, 0) 50%, rgb(27, 29, 33) 100%);
 }
-
 @media (max-width: 980px) {
   .home4 {
       padding: 2em !important;
   }
-}
-
-.home4 h2, .home4 h4{
-  color: #fff;
-}
-
-.home4 span {
-  background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .home4 .card {
@@ -203,19 +132,12 @@ img, svg {
   }
 }
 
-.home4 .card-content {
-  z-index: 1;
-}
-
 .home4 h2, .home4 h4 {
   color: #fff;
 }
 
 .home4 .card p {
   height: 25vh;
-}
-
-.home4 p {
   color: #9c9c9c;
 }
 
@@ -255,17 +177,13 @@ img, svg {
 
 
 
-
 /* ---------------------------------------------------------------------- */
                                 /* home5 */
 
 .home5 {
-    padding: 5em !important;
-    background: rgb(27, 29, 33);
-    background: linear-gradient(90deg, rgb(27, 29, 33) 0%, rgb(0, 0, 0) 50%, rgb(27, 29, 33) 100%);
-    color: #9c9c9c;
+  padding: 5em !important;
+  color: #9c9c9c;
 }
-
 @media (max-width: 980px) {
   .home5 {
       padding: 2em !important;
@@ -287,25 +205,16 @@ img, svg {
   color: #fff;
 }
 
-.home5 span {
+
+
+
+
+/* ---------------------------------------------------------------------- */
+                                /* home2, home3, home4, home5 */
+
+.home2 span, .home3 span, .home4 span, .home5 span {
   background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.col-5 {
-  flex: 0 0 auto;
-  width: 41.66666667%;
-}
-
-.home5 .photo2 {
-  padding-bottom: 0 !important;
-  width: 100%;
-}
-
-.home5 img {
-  padding-bottom: 2em;
-  width: 100%;
-  height: auto;
 }

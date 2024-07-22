@@ -9,8 +9,6 @@
 }
 
 .content .card {
-  margin-top: 3em;
-  padding: 2em;
   border: 0;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
@@ -19,10 +17,6 @@
 .content .card img {
   width: 45%;
   height: auto;
-}
-
-img, svg {
-  vertical-align: middle;
 }
 
 .content h1 {
@@ -35,10 +29,4 @@ img, svg {
 
 .content p {
   color: #fff;
-  font-size: 16px;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
 }

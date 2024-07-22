@@ -4,7 +4,6 @@ svg {
 }
 
 .rotate {
-  transform-origin: center;
   animation: rotate 2s linear infinite;
 }
 
