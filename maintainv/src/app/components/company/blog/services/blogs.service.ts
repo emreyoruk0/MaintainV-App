@@ -5,7 +5,6 @@ import { BlogModel } from '../models/blog.model';
   providedIn: 'root'
 })
 export class BlogsService {
-
   blogs: BlogModel[] = [
     {
       url: 'work-order-management',
@@ -52,9 +51,5 @@ export class BlogsService {
       title: 'CMMS Industry 4.0',
       content: 'CMMS (Computerized Maintenance Management System) is one of the key components of Industry 4.0 and can help successfully implement this new industrial transformation.'
     }
-  ]
-
-  constructor() {
-
-  }
+  ];
 }

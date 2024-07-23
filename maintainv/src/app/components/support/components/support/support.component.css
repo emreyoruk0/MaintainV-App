@@ -10,16 +10,9 @@
 }
 
 .content #card {
-  margin-top: 3em;
-  padding: 2em;
   border: 0;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
-}
-
-.content #card img {
-  width: 45%;
-  height: auto;
 }
 
 .content h1 {

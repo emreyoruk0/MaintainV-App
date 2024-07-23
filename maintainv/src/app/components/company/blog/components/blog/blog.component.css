@@ -10,24 +10,9 @@
 }
 
 .content .card {
-  margin-top: 3em;
-  padding: 2em;
   border: 0;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
-}
-.container .card:hover svg {
-  fill: #333;
-  background-color: #fff;
-}
-
-.content .card img {
-  width: 45%;
-  height: auto;
-}
-
-img, svg {
-  vertical-align: middle;
 }
 
 .content h1 {
@@ -44,20 +29,13 @@ img, svg {
   font-size: 16px;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
 input::placeholder{
   color: #9593A4;
-
 }
 
 .search {
   width: 50%;
   height: 50px;
-  background-color: transparent;
   padding: 10px;
   border-width: 1px, 1px, 0px, 1px;
   border-style: solid;
@@ -74,10 +52,8 @@ input::placeholder{
 .search .search-input {
   padding: 0 10px;
   width: 100%;
-  caret-color: #06f;
+  caret-color: #06f; /* yanıp sönen dikey çizginin rengi */
   font-size: 19px;
-  font-weight: 300;
-  transition: width .4s linear;
 }
 
 .search-input {
@@ -86,29 +62,23 @@ input::placeholder{
   background: none;
   width: 0;
   margin-top: 5px;
-  caret-color: transparent;
   color: #fff;
   line-height: 20px;
-  transition: width .4s linear;
-}
-
-.content a {
-  text-decoration: none;
-  color: #1b1d21 !important;
 }
 
 .search-icon {
+  text-decoration: none;
+  color: #1b1d21 !important;
   height: 34px;
   width: 34px;
   float: right;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   background-color: #06f;
   font-size: 10px;
-  bottom: 30px;
   position: relative;
+  bottom: 33px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -119,7 +89,6 @@ input::placeholder{
 
 
 /* ------------------------------- Container ------------------------ */
-
 
 .container .card {
   position: relative;
@@ -139,89 +108,47 @@ input::placeholder{
       width: 100% !important;
   }
 }
+.container .card:hover svg {
+  fill: #333;
+  background-color: #fff;
+}
 
-.container .video-container {
+.container video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
+  object-fit: cover;
+  transition: opacity .8s ease-in-out;
+  opacity: 0;
+  z-index: -1; /* kartın arkasında kalması için daha küçük z-index değeri */
 }
 @media (max-width: 980px) {
-  .video-container {
+  video {
       display: none;
   }
 }
-
-.container .background-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
-  transition: opacity .8s ease-in-out;
-  opacity: 0;
-  z-index: -1;
-}
-.container .card:hover .background-video {
+.container .card:hover video {
   opacity: 1;
 }
 
-.container .card h4 {
+.container h4 {
   height: 6vh;
 }
 
-.container h4 {
-  z-index: 999;
-}
-
-.container hr {
-  color: #fff;
-}
-
-.card>hr {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-hr {
-  margin: 1rem 0;
-  color: inherit;
-  border: 0;
-  border-top: var(--bs-border-width) solid;
-  opacity: .25;
-}
-
-.container .card p {
+.container p {
   margin-top: 1em !important;
   margin-bottom: 3em !important;
-}
-
-.container p {
   height: 10vh;
-  color: #fff;
-  z-index: 999;
-}
-
-.container a {
-  z-index: 999;
 }
 
 .container svg {
   fill: #fff;
+  background-color: #333;
   margin-bottom: 1em;
   margin-top: 2em;
   width: 17%;
-  background-color: #333;
   border-radius: 100px;
   transition: .5s;
-  z-index: 999 !important;
-  cursor: pointer;
 }
-
-
-
-
-
-
-

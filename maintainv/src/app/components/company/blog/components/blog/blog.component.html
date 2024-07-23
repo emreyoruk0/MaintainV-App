@@ -3,7 +3,7 @@
 <main class="content p-5">
   <section class="row justify-content-around mt-5">
     <div class="col-lg-5 col-12 card mt-5 p-5">
-      <img width="1024" height="984" src="sources/source2.webp" alt="Blog" />
+      <img width="45%" height="auto" src="sources/source2.webp" alt="Blog"/>
       <h1 class="mt-5">BLOG</h1>
     </div>
     <article class="col-lg-5 col-12 mt-5">
@@ -20,7 +20,7 @@
           placeholder="Search..."
           class="search-input"
           #ssInput/>
-        <a title="Search" class="search-icon" (click)="search = ssInput.value">
+        <a title="Search" class="search-icon" (click)="search = ssInput.value; scrollDown()">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search">
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
         </a>
@@ -31,19 +31,14 @@
 
 
 
-
-
-
 <section class="container p-5">
   <div class="row justify-content-around">
 
-    @for (blog of _blogsService.blogs | searchPipe: search; track blog ) {
-      <div class="card col-lg-3 col-12">
-        <div class="video-container">
-          <video autoplay muted loop class="background-video">
-            <source src="blog/blogVideoV.mp4" type="video/mp4" />
-          </video>
-        </div>
+    @for (blog of blogs | searchPipe: search; track blog ) {
+      <div class="card">
+        <video autoplay muted loop>
+          <source src="blog/blogVideoV.mp4" type="video/mp4"/>
+        </video>
         <h4 class="text-center mt-3">
           {{ blog.title }}
         </h4>
@@ -57,6 +52,5 @@
         </a>
       </div>
     }
-
   </div>
 </section>

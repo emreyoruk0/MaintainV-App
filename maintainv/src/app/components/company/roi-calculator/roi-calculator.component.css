@@ -33,13 +33,9 @@
 label {
   color: #9c9c9c;
   margin-left: .5em;
+  margin-bottom: .5rem;
   font-size: 12px;
 }
-
-.form-label {
-  margin-bottom: .5rem;
-}
-
 
 #submitButton {
   height: 3em;
@@ -47,34 +43,28 @@ label {
   width: 100%;
 }
 
+
+
 .content #hidden {
   color: #9c9c9c;
+  font-size: 1.2em;
+  margin: auto;
 }
 
 .content #hidden thead {
   color: #fff;
 }
 
-
-.content #hidden .hr-text {
+hr {
+  margin: 1rem 0;
   position: relative;
-  outline: 0;
   border: 0;
   color: #000;
   text-align: center;
   height: 1.5em;
   opacity: .5;
 }
-
-hr {
-  margin: 1rem 0;
-  color: inherit;
-  border: 0;
-  border-top: var(--bs-border-width) solid;
-  opacity: .25;
-}
-
-.content #hidden .hr-text:before {
+hr:before {
   content: "";
   background: linear-gradient(to right, transparent, white, transparent);
   position: absolute;

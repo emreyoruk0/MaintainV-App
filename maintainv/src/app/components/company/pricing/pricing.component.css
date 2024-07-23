@@ -27,30 +27,17 @@
   transform: scale(1.02);
 }
 
-.content .header {
-  padding: 1em;
-}
-
 .content span, .content h2, .content p {
   color: #fff;
 }
 
 .content .title span {
-  font-weight: 100;
   color: gray;
 }
 
 .content .title {
   padding: 1em;
   margin-top: 2em;
-}
-
-.content .title h2 {
-  display: inline-block;
-}
-
-.content .article {
-  padding: 1em;
 }
 
 .content ul {
@@ -66,30 +53,29 @@
   fill: #fff;
 }
 
-.content .free {
-  margin: auto auto 5px;
+.content .try-free {
+  margin: 1em auto 5px;  /* üst, (sağ,sol), alt */
   text-align: center;
   border: 1px solid #0065fc;
   border-radius: 20px;
   cursor: pointer;
   width: 50%;
-  margin-top: 1em !important;
   transition: .5;
 }
-.content .free:hover {
+.content .try-free:hover {
   cursor: pointer;
   background-color: #0065fc33;
 }
 
-.content a {
-  text-decoration: none;
-}
-
-.content .free h4 {
+.content .try-free h4 {
   padding: 5px !important;
   font-size: 1em;
   color: #fff;
   margin-top: 6px;
+}
+
+.content a {
+  text-decoration: none;
 }
 
 .content p {
@@ -98,33 +84,12 @@
   padding: 0 !important;
 }
 
-.content .pay {
-  cursor: pointer;
-  margin-top: 6.6em !important;
-  color: #fff;
-  margin: 1em auto 20px;
-  text-align: center;
-  border: 1px solid #0065fc;
-  border-radius: 20px;
-  width: 50%;
-}
-.content .pay:hover {
-  cursor: pointer;
-  background-color: #0065fc33;
-}
 
-.content .pay h4 {
-  font-size: 1em;
-  padding: 5px !important;
-  color: #fff;
-  margin-top: 6px;
+.content .most-btn {
+  margin: 6.6em auto 20px !important;
 }
 
 .content .footer {
-  bottom: 0 !important;
-  right: 0 !important;
-  left: 0 !important;
-  padding: 0 !important;
   border-radius: 0 0 10px 10px;
   background-color: #0065fc33;
   color: #fff;

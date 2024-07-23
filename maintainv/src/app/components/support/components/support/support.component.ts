@@ -15,7 +15,6 @@ import { GoToTopService } from '../../../../common/services/go-to-top.service';
   styleUrl: './support.component.css'
 })
 export class SupportComponent {
-
   questions: FAQModel[] = [];
   topics: TopicModel[] = [];
   selectedTopic: string = 'All';
@@ -35,9 +34,7 @@ export class SupportComponent {
       this.selectedTopic = topic;
       this.questions = this._faqsService.questions;
 
-      if(topic == 'All'){
-        return;
-      } else {
+      if(topic != 'All'){
         this.questions = this.questions.filter(q => q.topic === this.selectedTopic);
       }
    }

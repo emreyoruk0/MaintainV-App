@@ -5,22 +5,21 @@
 
 <main class="container">
   <section class="row p-3">
-    <article class="col-lg-9 col-12">
+    <article class="col-lg-9">
       <h1>{{ selectedBlog?.title }}</h1>
-      <hr />
+      <hr/>
       <p class="fw-bolder">{{ selectedBlog?.title }}</p>
       <p>
         {{ selectedBlog?.content }}
       </p>
     </article>
-
-
+    
     <aside id="latest" class="col-lg-3">
       @for (blog of blogs; track blog) {
         <div class="card col-3">
           <h4 class="text-center mt-3">{{ blog.title }}</h4>
-          <hr />
-          <a routerLink="/blog/{{blog.url}}" title="Read More">
+          <hr/>
+          <a (click)="changeBlogPage(blog)" title="Read More">
             <svg xmlns="http://www.w3.org/2000/svg" height="3em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus">
               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path></svg>
           </a>

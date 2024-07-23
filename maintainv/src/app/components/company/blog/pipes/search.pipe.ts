@@ -6,10 +6,9 @@ import { BlogModel } from '../models/blog.model';
   standalone: true
 })
 export class SearchPipe implements PipeTransform {
-
   transform(value: BlogModel[], search: string) {
 
-    if(search=="") {
+    if(search == '') {
       return value;
     }
 

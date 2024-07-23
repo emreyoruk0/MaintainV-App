@@ -15,11 +15,6 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
 }
 
-.content .card img {
-  width: 45%;
-  height: auto;
-}
-
 .content h1 {
   font-size: 72px;
   background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgb(255, 255, 255) 50%, rgb(37, 39, 40) 100%);
@@ -36,9 +31,6 @@
 
 
 
-
-
-
 /* ---------------------------- content2 ------------------------ */
 
 .content2 {
@@ -48,19 +40,3 @@
 .content2 p {
   color: #9c9c9c;
 }
-
-.content2 #photo1 img {
-  width: 100%;
-  height: auto;
-}
-
-.content2 #photo2 img {
-  width: 50%;
-  height: auto;
-}
-
-.content2 #photo3 img {
-  width: 100%;
-  height: auto;
-}
-

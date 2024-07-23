@@ -6,6 +6,7 @@ import { BlogsService } from '../../services/blogs.service';
 import { RouterLink } from '@angular/router';
 import { SearchPipe } from '../../pipes/search.pipe';
 import { CommonModule } from '@angular/common';
+import { BlogModel } from '../../models/blog.model';
 
 @Component({
   selector: 'app-blog',
@@ -16,13 +17,19 @@ import { CommonModule } from '@angular/common';
 })
 export class BlogComponent {
   search: string = "";
+  blogs: BlogModel[] = [];
 
   constructor(
     private _title: Title,
     private _goToTop: GoToTopService,
-    public _blogsService: BlogsService
+    private _blogsService: BlogsService
   ) {
     _title.setTitle('Blog | Maintain-V');
     _goToTop.goToTop();
+    this.blogs = _blogsService.blogs;
+  }
+
+  scrollDown(){
+    window.scrollTo(0, 389);
   }
 }
