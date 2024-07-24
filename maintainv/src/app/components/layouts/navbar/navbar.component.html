@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg" [ngClass]="{isScrolled: isScrolled || isIndustriesBtnClicked || isSourcesBtnClicked}">
+<nav class="navbar navbar-expand-lg" [ngClass]="{isScrolled: isScrolled || isIndustriesBtnClicked || isSourcesBtnClicked}" #navbarXd>
   <section class="container-fluid">
     <header (click)="goHomeAndCloseDropdowns()" title="Logo">
       <img height="40" width="152" src="logo/maintainv-logo2.svg" alt="Maintain-V Logo" class="m-3 d-none d-lg-block"/>
@@ -26,17 +26,17 @@
             <app-settings-icon [isRotate]="isIndustriesBtnClicked"></app-settings-icon>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" (click)="isSourcesBtnClicked=false; isIndustriesBtnClicked=false">
           <a routerLink="/features" title="Features" class="nav-link">
             Features
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" (click)="isSourcesBtnClicked=false; isIndustriesBtnClicked=false">
           <a routerLink="/pricing" title="Pricing" class="nav-link">
             Pricing
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" (click)="isSourcesBtnClicked=false; isIndustriesBtnClicked=false">
           <a routerLink="/contact" title="Contact" class="nav-link">
             Contact
           </a>

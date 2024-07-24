@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { SettingsIconComponent } from "../../../common/components/settings-icon/settings-icon.component";
 import { GoToTopService } from '../../../common/services/go-to-top.service';
@@ -32,13 +32,13 @@ export class NavbarComponent {
   }
 
 
-  @HostListener('window:scroll')
-  checkScroll() {
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (scrollPosition >= this.topPosToStartShowing) {
-      this.isScrolled = true;
-    } else {
-      this.isScrolled = false;
+  @ViewChild('navbarXd', {static: false}) navbarXd!: ElementRef;
+
+  @HostListener('document:click', ['$event'])
+  clickOut(event: Event) {
+    if(!this.navbarXd.nativeElement.contains(event.target)){
+      this.isIndustriesBtnClicked = false;
+      this.isSourcesBtnClicked = false;
     }
   }
 
@@ -52,10 +52,19 @@ export class NavbarComponent {
     this.isIndustriesBtnClicked = false;
   }
 
-
   goHomeAndCloseDropdowns() {
     this._goToTop.goHomeAndTop()
     this.isIndustriesBtnClicked = false;
     this.isSourcesBtnClicked = false;
+  }
+
+  @HostListener('window:scroll')
+  checkScroll() {
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    if (scrollPosition >= this.topPosToStartShowing) {
+      this.isScrolled = true;
+    } else {
+      this.isScrolled = false;
+    }
   }
 }
