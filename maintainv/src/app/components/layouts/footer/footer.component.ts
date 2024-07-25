@@ -13,5 +13,4 @@ export class FooterComponent {
   constructor(
     public _goToTop: GoToTopService
   ){}
-
 }

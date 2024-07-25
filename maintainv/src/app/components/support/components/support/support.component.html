@@ -2,10 +2,10 @@
 
 <main class="content p-5">
   <section class="row justify-content-around mt-5">
-    <div id="card" class="col-lg-5 col-12 mt-5 p-5">
+    <aside id="card-left" class="col-lg-5 col-12 mt-5 p-5">
       <img width="45%" height="auto" src="sources/source3.webp" alt="FAQS"/>
       <h1 class="mt-5">FAQS</h1>
-    </div>
+    </aside>
     <article class="col-lg-5 col-12 mt-5">
       <p>
         Welcome to our FAQs page! Here, we address the most common questions
@@ -24,7 +24,7 @@
 <section class="container">
   <section class="row justify-content-around">
     @for (top of topics; track top) {
-      <div (click)="filterFAQS(top.topic)" [ngClass]="{active: top.topic === selectedTopic}" class="card col-lg-2 col-md-6 col-12 mb-3">
+      <div (click)="filterFAQS(top.topic)" [ngClass]="{active: top.topic === selectedTopic}" class="card mb-3">
         <h2>{{ top.topic }}</h2>
       </div>
     }

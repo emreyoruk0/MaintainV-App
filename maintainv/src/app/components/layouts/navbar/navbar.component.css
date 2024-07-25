@@ -1,9 +1,9 @@
 nav {
   width: 100%;
   position: fixed;
-  display: block;
-  z-index: 9999;
   top: 0;
+  display: block;
+  z-index: 99;
   background: transparent !important;
   padding: 1em 2em;
 }
@@ -17,13 +17,10 @@ nav.isScrolled { /* nav isScrolled sınıfına sahipken..*/
   background: linear-gradient(89.61deg, #1F222A -17.72%, #020303 99.5%) !important;
 }
 
-
-
 img {
   width: 50%;
   height: auto;
   cursor: pointer;
-  vertical-align: middle;
 }
 @media (max-width: 980px) {
   img {
@@ -51,34 +48,22 @@ a {
   margin-right: 2em;
 }
 
-.start {
+.login {
+  margin: auto !important;
+}
+
+.request-demo {
   border: 1px solid #0165fd;
   border-radius: 32px;
   padding: 2px;
 }
-.start:hover {
+.request-demo:hover {
   transform: scale(1.01);
 }
 
-.start a {
-  color: #fff !important;
+.request-demo a {
   padding: 10px;
   font-size: 15px;
-}
-
-svg {
-  margin-left: 5px;
-  margin-bottom: 2px;
-}
-@media (max-width: 980px) {
-  #btn svg {
-      margin-left: 6em;
-      margin-top: .4em;
-  }
-}
-
-.login {
-  margin: auto !important;
 }
 
 
@@ -88,13 +73,17 @@ svg {
 /* --------------------------------- .dropdown-clicked -------------------------------------- */
 
 .dropdown-clicked {
-  transition: .5s;
-  z-index: 9999;
   position: absolute;
   margin-left: -2em !important;
   width: 100%;
   height: 40vh;
   background: linear-gradient(89.61deg, #1F222A -17.72%, #020303 99.5%) !important;
+}
+@media (max-width: 980px) {
+  .dropdown-clicked {
+      width: 104%;
+      text-align: center;
+  }
 }
 
 .dropdown-clicked img {
@@ -111,38 +100,31 @@ svg {
 .dropdown-clicked h5 {
   font-size: 18px;
 }
+@media (max-width: 980px) {
+  .dropdown-clicked h5 {
+      font-size: 15px !important;
+  }
+}
 
-#box {
+#left-content {
   border-right: 1px solid #333333 !important;
 }
 @media (max-width: 980px) {
-  #box {
+  #left-content {
       border-right: 0 !important;
   }
 }
 
-#blog a {
+#right-content a {
   color: #0165fd !important;
 }
-#blog h3, #blog p {
+
+#right-content h3, #right-content p {
   color: #fff !important;
 }
+
 @media (max-width: 980px) {
-  #blog {
+  #right-content {
       display: none !important;
-  }
-}
-
-@media (max-width: 980px) {
-  .dropdown-clicked {
-      width: 104%;
-      text-align: center;
-      height: 40vh;
-  }
-}
-
-@media (max-width: 980px) {
-  nav #box h5 {
-      font-size: 15px !important;
   }
 }
